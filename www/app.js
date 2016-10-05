@@ -1,38 +1,37 @@
-var app = angular.module('Contact-List', [])
+var app = angular.module("demo", []);
 
+app.controller("flipperDemo", function($scope) {
+  $scope.flipped = false;
 
-app.controller("MainCtrl", ["$scope", function ($scope) {
-  $scope.contact = {name: null, number: null}
-  $scope.text = "Guarde aqui todos os seus contatos"
-  $scope.contactList = [
-    {
-      name: 'Caro',
-      number: '123',
-    },
-    {
-      name: 'Bob',
-      number: '456'
-    },
-    {
-      name: 'Fido',
-      number: '789'
-    },
-    {
-      name: 'Flufkins',
-      number: '156'
-    },
-    {
-      name: 'Snow Ball',
-      number: '788'
+  $scope.flip = function() {
+    $scope.flipped = !$scope.flipped;
+  };
+});
+
+app.directive("flipper", function() {
+  return {
+    restrict: "E",
+    template: "<div class='flipper' ng-transclude ng-class='{ flipped: flipped }'></div>",
+    transclude: true,
+    scope: {
+      flipped: "="
     }
-  ]
-  $scope.saveContact = function () {
-    $scope.contactList.push({
-      name: $scope.contact.name,
-      number: $scope.contact.number
-    })
-    $scope.contact.name = null
-    $scope.contact.number = null
+  };
+});
+
+app.directive("front", function() {
+  return {
+    restrict: "E",
+    template: "<div class='front tile' ng-transclude></div>",
+    transclude: true
+  };
+});
+
+app.directive("back", function() {
+  return {
+    restrict: "E",
+    template: "<div class='back tile' ng-transclude></div>",
+    transclude: true
   }
-}])
+});
 
