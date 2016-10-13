@@ -3,8 +3,9 @@ var app = angular.module("demo", []);
 app.controller("flipperDemo", function($scope) {
   $scope.flipped = false;
 
+
   $scope.flip = function() {
-    $scope.flipped = !$scope.flipped;
+    $scope.flipped = !$scope.flipped
   };
 });
 
