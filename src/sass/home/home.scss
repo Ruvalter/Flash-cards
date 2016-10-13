@@ -1,0 +1,24 @@
+.content {
+	.style {
+	  color: red;
+	}
+}
+
+.mouse {
+	cursor: pointer;
+}
+
+.row-centered {
+  text-align: center;
+  .col-centered {
+    display: inline-block;
+    float: none;
+    text-align: center;
+    margin-right: -4px;
+    margin-top: -4px;
+  }
+}
+
+.center-row-middle {
+  margin-top: 100px;
+}

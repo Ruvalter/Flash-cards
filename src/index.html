@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="demo">
+<head>
+  <meta name="viewport" content="width=device-width">
+  <title>Flash Cards</title>
+
+  <!-- inject:css -->
+  <!-- endinject -->
+
+  <!-- inject:js -->
+  <!-- endinject -->
+
+</head>
+<body ng-controller="flipperDemo">
+<!-- Ng-controller é uma diretiva do Angular que indica qual o controller associado.  -->
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-lg-4 col-centered">
+      <flipper flipped="flipped" horizontal ng-click="flip()" class="mouse center-row-middle">
+        <front>
+          Car
+        </front>
+        <back>
+          "Take people to other places"
+        </back>
+      </flipper>
+    </div>
+  </div>
+</div>
+</body>
+</html>
