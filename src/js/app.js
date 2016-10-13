@@ -34,4 +34,3 @@ app.directive("back", function() {
     transclude: true
   }
 });
-
