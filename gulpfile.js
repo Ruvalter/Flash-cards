@@ -16,6 +16,11 @@ gulp.task('compress', function() {
     .pipe(gulp.dest('./dist'));
 });
 
+gulp.task('watch', function() {
+  gulp.watch('sass/**/*.scss', ['default'])
+  gulp.watch('css/*.css', ['default'])
+})
+
 gulp.task('default', function() {
   gulp.watch('sass/**/*.scss', ['styles']);
   gulp.watch('css/*.css', ['compress']);
