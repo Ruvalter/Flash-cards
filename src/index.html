@@ -16,14 +16,28 @@
 <div class="container">
   <div class="row row-centered">
     <div class="col-lg-4 col-centered">
-      <flipper flipped="flipped" horizontal ng-click="flip()" class="mouse center-row-middle">
-        <front>
-          Car
-        </front>
-        <back>
-          "Take people to other places"
-        </back>
-      </flipper>
+      <slick>
+        <div ng-repeat="card in cards">
+          <flipper card="card" horizontal ng-click="flip(card)" class="mouse center-row-middle">
+            <front>
+              <div class="word-title">
+                {{ card.title }}
+              </div>
+            </front>
+            <back>
+              <div class="word-title">
+                {{ card.title }}
+              </div>
+              <div class="word-meaning">
+                {{ card.meaning }}
+              </div>
+              <div class="word-example">
+                {{ card.example }}
+              </div>
+            </back>
+          </flipper>
+        </div>
+      </slick>
     </div>
   </div>
 </div>
