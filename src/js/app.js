@@ -1,4 +1,4 @@
-var app = angular.module("demo", ['slick']);
+var app = angular.module("demo", ['angular-carousel']);
 
 app.controller("flipperDemo", function($scope) {
   // $scope.flipped = false;

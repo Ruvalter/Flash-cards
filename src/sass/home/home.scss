@@ -22,3 +22,35 @@
 .center-row-middle {
   margin-top: 100px;
 }
+
+.image {
+  height: 500px;
+  .layer {
+    margin: 0 50px;
+  }
+}
+
+
+.card-container {
+  position: relative;
+  height: 400px;
+  .rn-carousel-controls {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    .rn-carousel-control-prev {
+      display: none;
+    }
+
+    .rn-carousel-control-next {
+      color: black;
+      display: block;
+      background-color: red;
+      border-radius: 4px;
+      padding: 5px;
+      &:before {
+        content: 'Próximo';
+      }
+    }
+  }
+}
