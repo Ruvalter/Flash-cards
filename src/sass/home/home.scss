@@ -45,12 +45,23 @@
     .rn-carousel-control-next {
       color: black;
       display: block;
-      background-color: red;
+      background-color: blue;
       border-radius: 4px;
       padding: 5px;
       &:before {
         content: 'Próximo';
       }
     }
+  }
+
+  .erase-btn {
+    position: absolute;
+    bottom: -38px;
+    border-radius: 4px;
+    padding: 6px;
+    color: black;
+    background-color: red;
+    border: 0;
+    font-size: 19px;
   }
 }

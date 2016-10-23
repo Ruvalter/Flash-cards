@@ -17,7 +17,7 @@
   <div class="row row-centered">
     <div class="col-lg-4 col-centered">
       <div class="card-container">
-        <ul rn-carousel class="image" rn-carousel-controls rn-carousel-controls-allow-loop>
+        <ul rn-carousel class="image" rn-carousel-controls rn-carousel-controls-allow-loop rn-carousel-index="carouselIndex">
           <li ng-repeat="card in cards">
             <div class="layer">
               <flipper card="card" horizontal ng-click="flip(card)" class="mouse center-row-middle">
@@ -41,6 +41,9 @@
             </div>
           </li>
         </ul>
+        <button ng-click="eraseCard()" class="erase-btn">
+          Apagar
+        </button>
       </div>
     </div>
   </div>

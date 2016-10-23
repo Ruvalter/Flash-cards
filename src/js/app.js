@@ -1,13 +1,16 @@
 var app = angular.module("demo", ['angular-carousel']);
 
 app.controller("flipperDemo", function($scope) {
-  // $scope.flipped = false;
-
 
   $scope.flip = function(card) {
     card.flipped = !card.flipped;
-    // $scope.flipped = !$scope.flipped
   };
+
+  $scope.carouselIndex = 0;
+
+  $scope.eraseCard = function() {
+    console.log($scope.carouselIndex);
+  }
 
   $scope.cards = [
     {
