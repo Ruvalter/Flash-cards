@@ -21,6 +21,12 @@ app.controller("flipperDemo", function($scope) {
       meaning: "It is a animal",
       example: "Here is my new dog",
       flipped: false
+    },
+     {
+      title: "Cat",
+      meaning: "It is a animal",
+      example: "Here is my new dog",
+      flipped: false
     }
   ];
 });
