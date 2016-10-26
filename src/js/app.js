@@ -10,6 +10,16 @@ app.controller("flipperDemo", function($scope) {
 
   $scope.eraseCard = function() {
     console.log($scope.carouselIndex);
+    if ($scope.carouselIndex === $scope.cards.length - 1){
+      $scope.cards.splice($scope.carouselIndex,1)
+      $scope.carouselIndex -= 1
+    } else {
+      $scope.cards.splice($scope.carouselIndex,1)
+    }
+  }
+
+  $scope.showLastSeenAt = function() {
+    return $scope.cards[$scope.carouselIndex].lastSeenAt
   }
 
   $scope.cards = [
@@ -17,13 +27,22 @@ app.controller("flipperDemo", function($scope) {
       title: "Run",
       meaning: "Move fast",
       example: "I had to run",
-      flipped: false
+      flipped: false,
+      lastSeenAt: new Date()
+    },
+    {
+      title: "Cat",
+      meaning: "Move fast",
+      example: "I had to run",
+      flipped: false,
+      lastSeenAt: new Date()
     },
     {
       title: "Dog",
       meaning: "It is a animal",
       example: "Here is my new dog",
-      flipped: false
+      flipped: false,
+      lastSeenAt: new Date()
     }
   ];
 });
