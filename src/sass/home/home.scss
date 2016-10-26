@@ -20,11 +20,11 @@
 }
 
 .center-row-middle {
-  margin-top: 100px;
+  margin-top: 10px;
 }
 
 .image {
-  height: 500px;
+  height: 270px;
   .layer {
     margin: 0 50px;
   }
@@ -33,7 +33,7 @@
 
 .card-container {
   position: relative;
-  height: 400px;
+  height: 280px;
   .rn-carousel-controls {
     position: absolute;
     bottom: 0;
@@ -43,25 +43,49 @@
     }
 
     .rn-carousel-control-next {
-      color: black;
+      color: #a70038;
+      position: absolute;
+      width: 50px;
+      height: 50px;
       display: block;
-      background-color: blue;
-      border-radius: 4px;
-      padding: 5px;
+      background-color: white;
+      padding: 9px 0;
+      border-radius: 30px;
+      border-color: #a70038;
+      line-height: 1.42;
+      border-style: solid;
+      border-width: 2px;
       &:before {
-        content: 'Próximo';
+        content: 'S';
       }
     }
   }
 
   .erase-btn {
-    position: absolute;
-    bottom: -38px;
-    border-radius: 4px;
-    padding: 6px;
-    color: black;
-    background-color: red;
-    border: 0;
-    font-size: 19px;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  color: gray;
+  background-color: white;
+  text-align: center;
+  padding: 6px 0;
+  font-size: 19px;
+  line-height: 1.42;
+  border-radius: 30px;
   }
+}
+
+.indexCount {
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+}
+
+.lastSeenStyle {
+  font-size: 11px;
+  color: gray;
+  text-align: center;
+  vertical-align: bottom;
+  margin-top: 210px;
+  opacity: 0.5;
 }

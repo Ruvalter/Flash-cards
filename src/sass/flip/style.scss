@@ -10,6 +10,26 @@
   -moz-box-sizing: border-box;
 }
 
+.titleFront {
+  color: gray;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 38px;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+
+
+
+.labelTitle {
+  color: gray;
+  margin-top: 70px;
+}
+
+
 body {
   font-family: Arial;
   font-size: 14px;
@@ -55,7 +75,6 @@ flipper {
     float: left;
     width: 100%;
     height: 100%;
-    // border: 1px solid blue;
     position: relative;
     transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
@@ -88,11 +107,21 @@ flipper {
     }
     .front {
       z-index: 2;
-      background: green;
+      background: white;
+      color: gray;
+      border-color: #a70038;
+      border-style: solid;
+      border-width: 3px;
+      border-radius: 5px;
       /* front tile styles go here! */
     }
     .back {
-      background: #9E1919;
+      background: black;
+      color: white;
+      border-color: #a70038;
+      border-style: solid;
+      border-width: 3px;
+      border-radius: 5px;
       /* back tile styles go here! */
     }
   }
