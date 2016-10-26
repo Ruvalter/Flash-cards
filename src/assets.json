@@ -2,17 +2,15 @@
 {
   "css": [
     "lib/bootstrap-css-only/css/bootstrap.min",
-    "lib/slick-carousel/slick/slick",
-    "lib/slick-carousel/slick/slick-theme",
+    "lib/angular-carousel/dist/angular-carousel.min",
     "sass/home/home",
     "sass/flip/style"
   ],
 
   "js": [
-    "lib/jquery/dist/jquery.min",
     "lib/angular/angular.min",
-    "lib/slick-carousel/slick/slick.min",
-    "lib/angular-slick/dist/slick.min",
+    "lib/angular-carousel/dist/angular-carousel.min",
+    "lib/angular-touch/angular-touch.min",
     "js/app",
     "js/controllers/*",
     "js/services/*",
