@@ -3,6 +3,7 @@
   "css": [
     "lib/bootstrap-css-only/css/bootstrap.min",
     "lib/angular-carousel/dist/angular-carousel.min",
+    "lib/font-awesome/css/font-awesome.min",
     "sass/home/home",
     "sass/flip/style"
   ],
