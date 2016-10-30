@@ -22,11 +22,77 @@
   transform: translate(-50%, -50%)
 }
 
+.word-title {
+  color: white;
+  text-align: left;
+  font-family: Impact, Charcoal, sans-serif;
+  font-size: 22px;
+  text-transform: uppercase;
+  position: relative;
+  padding-top: 20px;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+#volume{
+  float: right;
+  color: #eaeaea;
+  font-size: 14px;
+  text-align: right;
+  position: absolute;
+  top: 1%;
+  left: 78%;
+}
+
+.word-category {
+  color: #dabe24;
+  text-align: left;
+  font-size: 12px;
+  position: relative;
+  top: 1%;
+}
 
 
-.labelTitle {
+.word-example {
+  color: #eaeaea;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: relative;
+  top: 18%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.labelMini {
+  color: #8e8c8c;
+  text-align: left;
+  font-size: 12px;
+  position: relative;
+  top: 11%;
+}
+
+.word-meaning {
+  color: #eaeaea;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  // text-transform: uppercase;
+  position: relative;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+}
+
+.lastSeenStyle {
+  font-size: 11px;
   color: gray;
-  margin-top: 70px;
+  text-align: center;
+  vertical-align: bottom;
+  margin-top: 210px;
+  opacity: 0.5;
 }
 
 
@@ -111,7 +177,7 @@ flipper {
       color: gray;
       border-color: #a70038;
       border-style: solid;
-      border-width: 3px;
+      border-width: 2px;
       border-radius: 5px;
       /* front tile styles go here! */
     }
@@ -120,7 +186,7 @@ flipper {
       color: white;
       border-color: #a70038;
       border-style: solid;
-      border-width: 3px;
+      border-width: 2px;
       border-radius: 5px;
       /* back tile styles go here! */
     }

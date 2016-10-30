@@ -16,8 +16,13 @@
 <div class="container">
   <div class="row row-centered">
     <div class="col-lg-4 col-centered">
-    <h1 class="labelTitle">Stack 23</h1>
-    <p class="indexCount">{{carouselIndex + 1}} of {{cards.length}} left</p>
+    <h1 class="labelTitle"><i class="fa fa-arrow-left" aria-hidden="true"></i> .. Stack 23</h1>
+    <p class="indexCount">{{carouselIndex + 1}} of {{cards.length}} cards left</p>
+    <div id="wrapper">
+      <div id="sidebar">You removed a card.</div>
+      <div id="content"><a href="javascript:void(0);" class="aNotifications" onClick="undoAction()">UNDO</a></div>
+      <div id="cleared"></div>
+    </div>
       <div class="card-container">
         <ul rn-carousel class="image" rn-carousel-controls rn-carousel-controls-allow-loop rn-carousel-index="carouselIndex">
           <li ng-repeat="card in cards">
@@ -30,14 +35,22 @@
                   <h6 class="lastSeenStyle">Last seen on {{showLastSeenAt()}}</h6>
                 </front>
                 <back>
-                  <div class="word-title">
+                  <div>
+                    <div class="word-title">
                     {{ card.title }}
+                    </div>
+                    <div id="volume"><h4><i class="fa fa-volume-up fa-2x" aria-hidden="true"></i></h4></div>
                   </div>
-                  <div class="word-meaning">
-                    {{ card.meaning }}
+                  <div class="word-category">
+                    {{ card.category }}
                   </div>
+                  <p class="labelMini">example</p>
                   <div class="word-example">
                     {{ card.example }}
+                  </div>
+                  <hr>
+                  <div class="word-meaning">
+                    {{ card.meaning }}
                   </div>
                 </back>
               </flipper>
@@ -45,8 +58,9 @@
           </li>
         </ul>
         <button ng-click="eraseCard()" class="erase-btn">
-          A
+          <i class="fa fa-archive" aria-hidden="true"></i>
         </button>
+        <p class="buttonNameStyle">Archive</p>
       </div>
     </div>
   </div>

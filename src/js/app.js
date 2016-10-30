@@ -24,25 +24,28 @@ app.controller("flipperDemo", function($scope) {
 
   $scope.cards = [
     {
-      title: "Run",
-      meaning: "Move fast",
-      example: "I had to run",
+      title: "Therefore",
+      category: "Adverb",
+      meaning: "as a result; because of that; for that reason.",
+      example: "We were unable to get funding and therefore had to abandon the project.",
       flipped: false,
-      lastSeenAt: new Date()
+      lastSeenAt: new Date().getDate()
     },
     {
       title: "Cat",
+      category: "Adverb",
       meaning: "Move fast",
       example: "I had to run",
       flipped: false,
-      lastSeenAt: new Date()
+      lastSeenAt: new Date().getDate()
     },
     {
       title: "Dog",
+      category: "Adverb",
       meaning: "It is a animal",
       example: "Here is my new dog",
       flipped: false,
-      lastSeenAt: new Date()
+      lastSeenAt: new Date().getDate()
     }
   ];
 });

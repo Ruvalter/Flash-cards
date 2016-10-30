@@ -4,6 +4,14 @@
 	}
 }
 
+.labelTitle {
+  color: gray;
+  margin-top: 70px;
+  text-align: left;
+  cursor: pointer;
+  margin-left: 47px;
+}
+
 .mouse {
 	cursor: pointer;
 }
@@ -30,6 +38,42 @@
   }
 }
 
+
+#wrapper {
+  margin-left: 49px;
+  margin-right: 60px;
+  visibility: visible;
+  border-color: gray;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 3px;
+}
+
+#sidebar {
+  float: left;
+  padding: 5px;
+  width: 157px;
+  margin-left: 0px;
+  color: white;
+  background-color: gray;
+}
+
+#content {
+  float: right;
+  padding: 5px;
+  width: 90px;
+  margin-left: 0px;
+  background-color: gray;
+}
+
+.aNotifications {
+  color: #abd1d8;
+  text-decoration: none;
+}
+
+#cleared {
+  clear: both;
+}
 
 .card-container {
   position: relative;
@@ -81,11 +125,12 @@
   text-align: center;
 }
 
-.lastSeenStyle {
+.buttonNameStyle {
   font-size: 11px;
   color: gray;
-  text-align: center;
+  text-align: right;
   vertical-align: bottom;
-  margin-top: 210px;
+  margin-top: 66px;
   opacity: 0.5;
+  margin-right: 135px;
 }
