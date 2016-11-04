@@ -29,20 +29,23 @@
   font-size: 22px;
   text-transform: uppercase;
   position: relative;
-  padding-top: 20px;
-  top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%)
+  // padding-top: 20px;
+  // top: 10%;
+  // left: 50%;
+  // transform: translate(-50%, -50%)
 }
 
 #volume{
   float: right;
   color: #eaeaea;
-  font-size: 14px;
-  text-align: right;
-  position: absolute;
-  top: 1%;
-  left: 78%;
+  // font-size: 14px;
+  // text-align: right;
+  // position: absolute;
+  // top: 1%;
+  // left: 78%;
+  &:hover {
+    color: #544b4b;
+  }
 }
 
 .word-category {
@@ -173,7 +176,7 @@ flipper {
     }
     .front {
       z-index: 2;
-      background: white;
+      background: #292929;
       color: gray;
       border-color: #a70038;
       border-style: solid;
@@ -182,12 +185,13 @@ flipper {
       /* front tile styles go here! */
     }
     .back {
-      background: black;
+      background: #151414;
       color: white;
       border-color: #a70038;
       border-style: solid;
       border-width: 2px;
       border-radius: 5px;
+      box-shadow: 0px 0px 45px #6f0a0a;
       /* back tile styles go here! */
     }
   }

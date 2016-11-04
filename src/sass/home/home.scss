@@ -4,12 +4,36 @@
 	}
 }
 
+
 .labelTitle {
   color: gray;
-  margin-top: 70px;
-  text-align: left;
+  float: left;
+  padding-right: 70px;
+}
+
+body {
+  background: #170707;
+}
+
+.labelIcon {
+  color: gray;
   cursor: pointer;
-  margin-left: 47px;
+  padding-left: 28px;
+  &:hover {
+    color: #544b4b;
+  }
+}
+
+
+.cardsMenu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.cardsWordTitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .mouse {
@@ -23,7 +47,7 @@
     float: none;
     text-align: center;
     margin-right: -4px;
-    margin-top: -4px;
+    margin-top: 100px;
   }
 }
 
@@ -32,7 +56,8 @@
 }
 
 .image {
-  height: 270px;
+  height: 290px;
+  margin-bottom: 0px;
   .layer {
     margin: 0 50px;
   }
@@ -42,12 +67,17 @@
 #wrapper {
   margin-left: 49px;
   margin-right: 60px;
-  visibility: visible;
   border-color: gray;
   border-style: solid;
   border-width: 2px;
   border-radius: 3px;
+  visibility: hidden;
+  &.ativarNote {
+    visibility: visible;
+  }
 }
+
+
 
 #sidebar {
   float: left;
@@ -66,6 +96,11 @@
   background-color: gray;
 }
 
+
+.noteTest{
+  visibility: visible;
+}
+
 .aNotifications {
   color: #abd1d8;
   text-decoration: none;
@@ -77,7 +112,7 @@
 
 .card-container {
   position: relative;
-  height: 280px;
+  height: 290px;
   .rn-carousel-controls {
     position: absolute;
     bottom: 0;
@@ -92,7 +127,7 @@
       width: 50px;
       height: 50px;
       display: block;
-      background-color: white;
+      background-color: #170707;
       padding: 9px 0;
       border-radius: 30px;
       border-color: #a70038;
@@ -110,14 +145,21 @@
   width: 50px;
   height: 50px;
   color: gray;
-  background-color: white;
+  background-color: #170707;
   text-align: center;
   padding: 6px 0;
   font-size: 19px;
   line-height: 1.42;
   border-radius: 30px;
+  &:hover {
+    color: #e4e4e4;
+    border-color: #e4e4e4;
+    background-color: #2f2f2f;
+  }
   }
 }
+
+
 
 .indexCount {
   font-size: 14px;
