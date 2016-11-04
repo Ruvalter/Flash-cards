@@ -29,7 +29,7 @@ app.controller("CardsController", function($scope, $timeout) {
     console.log($scope.carouselIndex);
     // $scope.notificationAlerts[0].visi = "visible"
     $scope.ativo = true
-    $timeout(function () { $scope.ativo = false; }, 3000);
+    $timeout(function () { $scope.ativo = false; }, 4000);
 
     console.log($scope.notificationAlerts[0].visi)
     if ($scope.carouselIndex === $scope.cards.length - 1){
