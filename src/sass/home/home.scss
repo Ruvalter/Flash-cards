@@ -72,8 +72,19 @@ body {
   border-width: 2px;
   border-radius: 3px;
   visibility: hidden;
+  -webkit-opacity: 0.25;
+  -moz-opacity: 0.25;
+  opacity: 0.25;
+-webkit-transition: all 2s ease;
+  -moz-transition: all 2s ease;
+  -ms-transition: all 2s ease;
+  -o-transition: all 2s ease;
+  transition: all 2s ease;
   &.ativarNote {
     visibility: visible;
+    -webkit-opacity: 1;
+    -moz-opacity: 1;
+    opacity: 1;
   }
 }
 
@@ -141,21 +152,24 @@ body {
   }
 
   .erase-btn {
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  color: gray;
-  background-color: #170707;
-  text-align: center;
-  padding: 6px 0;
-  font-size: 19px;
-  line-height: 1.42;
-  border-radius: 30px;
-  &:hover {
-    color: #e4e4e4;
-    border-color: #e4e4e4;
-    background-color: #2f2f2f;
-  }
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    color: gray;
+    background-color: #170707;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 19px;
+    line-height: 1.42;
+    border-radius: 30px;
+    &:hover {
+      color: #e4e4e4;
+      border-color: #e4e4e4;
+      background-color: #2f2f2f;
+    }
+    &:focus{
+      outline-width: 0;
+    }
   }
 }
 
