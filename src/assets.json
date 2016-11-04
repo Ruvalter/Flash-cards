@@ -5,7 +5,6 @@
     "lib/angular-carousel/dist/angular-carousel.min",
     "lib/font-awesome/css/font-awesome.min",
     "sass/home/home",
-    "sass/home/navegation",
     "sass/flip/style"
   ],
 
