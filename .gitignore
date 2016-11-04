@@ -1,6 +1,4 @@
 src/lib
-css
-dist
 node_modules
 www
 .DS_Store
