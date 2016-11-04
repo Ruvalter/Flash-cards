@@ -8,8 +8,30 @@ app.controller("flipperDemo", function($scope) {
 
   $scope.carouselIndex = 0;
 
+
+// Notifications array
+  $scope.notificationAlerts = [
+    {
+      text: "You removed a card.",
+      button: "UNDO",
+      visi: "hidden"
+    },
+    {
+      text: "You removed.",
+      button: "UNDO",
+      visi: "hidden"
+    }
+  ];
+
+  $scope.ativo = false
+
+
   $scope.eraseCard = function() {
     console.log($scope.carouselIndex);
+    // $scope.notificationAlerts[0].visi = "visible"
+    $scope.ativo = true
+
+    console.log($scope.notificationAlerts[0].visi)
     if ($scope.carouselIndex === $scope.cards.length - 1){
       $scope.cards.splice($scope.carouselIndex,1)
       $scope.carouselIndex -= 1
@@ -21,6 +43,7 @@ app.controller("flipperDemo", function($scope) {
   $scope.showLastSeenAt = function() {
     return $scope.cards[$scope.carouselIndex].lastSeenAt
   }
+
 
   $scope.cards = [
     {
