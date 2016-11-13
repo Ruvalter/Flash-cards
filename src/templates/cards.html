@@ -1,0 +1,59 @@
+<div class="container">
+  <div class="row row-centered">
+    <div class="col-lg-4 col-centered">
+      <div class="cardsMenu">
+        <h1 class="labelIcon"><i class="fa fa-arrow-left" aria-hidden="true"></i></h1>
+        <h1 class="labelTitle">Stack 23 </h1>
+      </div>
+      <p class="indexCount">{{carouselIndex + 1}} of {{cards.length}} cards left</p>
+      <div id="wrapper" ng-class="{'ativarNote':ativo}">
+        <div id="sidebar">
+          {{ notificationAlerts[0].text }}
+        </div>
+        <div id="content">
+        <a href="javascript:void(0);" class="aNotifications" onClick="undoAction()">
+        {{ notificationAlerts[0].button }} </a></div>
+        <div id="cleared"></div>
+      </div>
+      <div class="card-container">
+        <ul rn-carousel class="image" rn-carousel-controls rn-carousel-controls-allow-loop rn-carousel-index="carouselIndex">
+          <li ng-repeat="card in cards">
+            <div class="layer">
+              <flipper card="card" horizontal ng-click="flip(card)" class="mouse center-row-middle">
+                <front>
+                  <div class="titleFront">
+                    {{ card.title }}
+                  </div>
+                  <h6 class="lastSeenStyle">Last seen on {{showLastSeenAt()}}</h6>
+                </front>
+                <back>
+                  <div class="cardsWordTitle">
+                    <div class="word-title">
+                    {{ card.title }}
+                    </div>
+                    <h6><i id="volume" class="fa fa-volume-up fa-2x" aria-hidden="true"></i></h6>
+                  </div>
+                  <div class="word-category">
+                    {{ card.category }}
+                  </div>
+                  <p class="labelMini">example</p>
+                  <div class="word-example">
+                    {{ card.example }}
+                  </div>
+                  <hr>
+                  <div class="word-meaning">
+                    {{ card.meaning }}
+                  </div>
+                </back>
+              </flipper>
+            </div>
+          </li>
+        </ul>
+        <button id="teste" ng-click="eraseCard()" class="erase-btn">
+          <i class="fa fa-archive" aria-hidden="true"></i>
+        </button>
+        <p class="buttonNameStyle">Archive</p>
+      </div>
+    </div>
+  </div>
+</div>
