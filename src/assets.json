@@ -12,6 +12,8 @@
     "lib/angular/angular.min",
     "lib/angular-carousel/dist/angular-carousel.min",
     "lib/angular-touch/angular-touch.min",
+    "lib/angular-ui-router/release/angular-ui-router.min",
+    "lib/underscore/underscore-min",
     "js/app",
     "js/controllers/*",
     "js/services/*",
