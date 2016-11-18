@@ -1,4 +1,5 @@
-app.controller("CardListCtrl", function($scope) {
+// nome do controller geralmente vem com maiuscula
+app.controller("CardListCtrl", function($scope, $timeout) {
 
   $scope.flip = function(card) {
     card.flipped = !card.flipped;
@@ -28,6 +29,7 @@ app.controller("CardListCtrl", function($scope) {
     console.log($scope.carouselIndex);
     // $scope.notificationAlerts[0].visi = "visible"
     $scope.ativo = true
+    $timeout(function () { $scope.ativo = false; }, 4000);
 
     console.log($scope.notificationAlerts[0].visi)
     if ($scope.carouselIndex === $scope.cards.length - 1){
@@ -53,18 +55,18 @@ app.controller("CardListCtrl", function($scope) {
       lastSeenAt: new Date().getDate()
     },
     {
-      title: "Cat",
-      category: "Adverb",
-      meaning: "Move fast",
-      example: "I had to run",
+      title: "Elephant",
+      category: "Noun",
+      meaning: "a very large grey mammal that has a trunk (= long nose) with which it can pick things up",
+      example: "In the past eight years, the elephant population in Africa has been halved.",
       flipped: false,
       lastSeenAt: new Date().getDate()
     },
     {
-      title: "Dog",
-      category: "Adverb",
-      meaning: "It is a animal",
-      example: "Here is my new dog",
+      title: "Regarding",
+      category: "Preposition",
+      meaning: "about.",
+      example: "The company is being questioned regarding its employment policy.",
       flipped: false,
       lastSeenAt: new Date().getDate()
     }
