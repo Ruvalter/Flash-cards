@@ -25,8 +25,10 @@
 .word-title {
   color: white;
   text-align: left;
-  font-family: Impact, Charcoal, sans-serif;
-  font-size: 22px;
+  font-family: Unbutu, sans-serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 24px;
   text-transform: uppercase;
   position: relative;
   // padding-top: 20px;
@@ -71,6 +73,8 @@
 
 .labelMini {
   color: #8e8c8c;
+  font-family: Raleway, sans-serif;
+  letter-spacing: 2px;
   text-align: left;
   font-size: 12px;
   position: relative;
@@ -178,20 +182,20 @@ flipper {
       z-index: 2;
       background: #292929;
       color: gray;
-      border-color: #a70038;
-      border-style: solid;
-      border-width: 2px;
-      border-radius: 5px;
+      // border-color: #a70038;
+      // border-style: solid;
+      // border-width: 2px;
+      // border-radius: 5px;
       /* front tile styles go here! */
     }
     .back {
-      background: #151414;
+      background: #232323;
       color: white;
-      border-color: #a70038;
-      border-style: solid;
-      border-width: 2px;
-      border-radius: 5px;
-      box-shadow: 0px 0px 45px #6f0a0a;
+      // border-color: #a70038;
+      // border-style: solid;
+      // border-width: 2px;
+      // border-radius: 5px;
+      // box-shadow: 0px 0px 45px #6f0a0a;
       /* back tile styles go here! */
     }
   }
